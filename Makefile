@@ -1,7 +1,7 @@
 # Run 'make PYTHON=/usr/bin/python2.4' or w.e. if /usr/bin/python isn't suitable.
 # You may also specify the install prefix by appending e.g. "PREFIX=/usr/local"
 PYTHON ?= /usr/bin/python
-PREFIX ?= /usr
+PREFIX ?= /usr/local
 
 build:
 	gcc -DPYTHON=\"$(PYTHON)\" -DPREFIX=\"$(PREFIX)\" -o f5vpn-login-runner f5vpn-login-runner.c
